@@ -15,21 +15,53 @@ var generatePassword = function() {
     if (( pwordLength < 8) || ( pwordLength > 128)) {
         window.alert("Must be between 8 and 128 characters");
         return ;
-    }else
+    }
+    
     
     var answerLower = window.confirm("Do you want lower case letters included? OK - yes, Cancel - no");
     if (answerLower == true);
+    
+    var answerUpper = window.confirm("Do you want upper case letters included? OK - yes, Cancel - no");
+    if (answerUpper == true);
 
+    var answerNumbers = window.confirm("Do you want numbers included? OK - yes, Cancel - no");
+    if (answerNumbers == true);
 
-    else if (answerLower == false)
-    window.alert("Must choose one criteria of lower case, upper case, numbers or special characters")
- ;
+    var answerSpecial = window.confirm("Do you want special characters included? OK - yes, Cancel - no");
+    if (answerSpecial == true);
+
+    else {
+        ((lower == false) && (upper == false) && (numbers == false) && (special == false))
+    window.alert("Must choose one criteria of lower case, upper case, numbers or special characters");
+    }
+    return;
 }
+
+
 
 
 
 // Function to create password
 
+function createPword() {
+
+  var pwordOptions = criteria;
+  var pwordCombination = [];
+  var pwordResult = "";
+
+  if (pwordOptions.answerLower) {
+      for (var i of lower)
+      pwordCombination.push(i);
+  }
+
+  for (var i = 0; i < pwordOptions.length; i++) {
+    pwordResult += pwordCombo[Math.floor(Math.random() * pwordCombo.length)];
+    
+  }
+
+  return finalPassword;
+
+}
 
   // Write password to the #password input
   function writePassword() {
