@@ -20,7 +20,7 @@ function generatePassword() {
   console.log(pwordLength);
   if ((pwordLength < 8) || (pwordLength > 128) || isNaN(pwordLength)) {
     window.alert("Must be between 8 and 128 characters");
-    return pwordLength;
+    return;
   }
 
 // Criteria to determine make up of password characters
@@ -49,6 +49,7 @@ function generatePassword() {
   }
   else {
     window.alert("Must choose one criteria of lower case, upper case, numbers or special characters");
+    return;
   }
 
 // For statement to produce a random string from the password length and criteria
