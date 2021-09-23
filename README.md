@@ -2,8 +2,8 @@
 
 ## Description
 
-Creating a unique password can be difficult and falling back on favourite foods, cities, 
-or tv shows, can be easily guessed by someone with a little bit of knowledge about you. To 
+Creating a unique password can be difficult and falling back on your favourite foods, cities, 
+or tv shows as a password can be easily guessed by someone with a little bit of knowledge about you. To 
 help keep hackers (or maybe just the nosy) out of your accounts, a random password generator
 could be the solution. 
 
